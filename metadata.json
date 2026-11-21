@@ -1,0 +1,8 @@
+{
+  "name": "Remix essad",
+  "description": "Imported from GitHub: mediayaseer-arch/essad",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

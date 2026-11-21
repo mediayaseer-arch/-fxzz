@@ -1,0 +1,18 @@
+name = "esaad-rewards-app"
+main = "worker.ts"
+compatibility_date = "2025-02-14"
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = ["/api/*"]
+
+[vars]
+ADMIN_EMAIL = "jdjek999@gmail.com"
+SUPABASE_URL = "https://fhgbeaaklgsoginftfcf.supabase.co"
+SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZoZ2JlYWFrbGdzb2dpbmZ0ZmNmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM5MTY3MTcsImV4cCI6MjEwOTQ5MjcxN30.JkGByYisJ_kIOCYoB3-_B6pn5AfkZnfb-Pa0akmi7ik"
+ SUPABASE_SERVICE_ROLE_KEY= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZoZ2JlYWFrbGdzb2dpbmZ0ZmNmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MzkxNjcxNywiZXhwIjoyMTA5NDkyNzE3fQ.1O6YLHSne2MEcO_zMZiZG9woiKqS9Z_a2mVekE6Z6Rk"
+# For sensitive keys (SUPABASE_SERVICE_ROLE_KEY, ADMIN_PASSWORD), set them via:
+# npx wrangler secret put SUPABASE_SERVICE_ROLE_KEY
+# npx wrangler secret put ADMIN_PASSWORD
